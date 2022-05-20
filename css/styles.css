@@ -1,0 +1,207 @@
+/* цвет лого #2196F3 #000000 */
+/*  цвет заголовков #212121 */
+/* дополнительний цвет текста #FFFFFF */
+/* основной текст  #757575 */
+/* текст контактов rgba(255, 255, 255, 0.6) */
+
+/* Стили для index*/
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --primary-background-color: #F5F4FA;
+    --accent-hover-color: #188CE8;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+      }
+
+.section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.title {
+    color: var(--primary-white-color);
+    font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+}
+
+.list {
+    list-style-type: none;
+}
+
+
+/* Шапка */
+
+
+.logo {
+    color: #000000;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo-blue,
+.logo-blue {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+}
+
+.nav-link:hover:hover, .nav-link:focus {
+    color: var(--accent-color);
+}
+
+.nav-link.current {
+    color: var(--accent-color);
+}
+
+.nav-link.contact-link {
+    color: var(--primary-text-color);
+       }
+
+.nav-contacts .nav-link:hover, .nav-link:focus {
+    color: var(--accent-color);
+    }
+
+    /* Меін контент */
+
+
+.baner {
+        background-color: #2F303A;
+        
+    }
+
+    .baner-button {
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        cursor: pointer;
+    }
+
+    .baner .baner-button:hover, .baner-button:focus {
+        background-color: var(--accent-hover-color);
+    }
+
+    .benefits {
+        background-color: #FFFFFF;
+    }
+
+.benefits-title {
+    font-size: 14px;
+        line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.benefits-text {
+    line-height: 1.71;
+    }
+
+
+    .team {
+        background-color: var(--primary-background-color);
+    }
+
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--title-text-color);
+    }
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+   }
+
+/* Футер */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer .logo {
+    color: var(--primary-white-color);
+}
+
+.address .address-link {
+    color: var(--primary-white-color);
+    font-style: normal;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+.footer .contact-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    line-height: 1.71;
+   }
+
+.address .contact-link:hover, .contact-link:focus {
+    color: var(--accent-color);
+}
+/* Стили для портфолио */
+
+.filter-button {
+    font-family: inherit;
+    color: var(--title-text-color);
+    background-color: var(--primary-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    }
+
+.filter-button.active {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+.filter-buttons .filter-button:hover, .filter-button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color)   ;
+}
+
+.portfolio-cards .card-title {
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.88;
+    }
