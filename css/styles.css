@@ -3,6 +3,8 @@
 /* дополнительний цвет текста #FFFFFF */
 /* основной текст  #757575 */
 /* текст контактов rgba(255, 255, 255, 0.6) */
+/* рамка хедера #ececec */
+/* рамка карток в портфоліо #EEEEEE */
 
 /* Стили для index*/
 
@@ -13,6 +15,8 @@
   --primary-white-color: #ffffff;
   --primary-background-color: #f5f4fa;
   --accent-hover-color: #188ce8;
+  --header-border-color: #ececec;
+  --portfolio-cards-border: #eeeeee;
 }
 
 body {
@@ -35,23 +39,29 @@ p {
 
 .container {
   outline: 2px solid teal;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.nav-container {
+  border: 1px solid var(--header-border-color);
+}
+
 .header-box {
   display: flex;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
 }
 
-.contact-list {
+.header-box .contact-list {
   display: flex;
+  margin-left: auto;
 }
 
 .section-title {
@@ -194,13 +204,23 @@ p {
 .section-item {
   display: flex;
   flex-direction: column;
-}
-
-.section-item:not(:last-child) {
+  margin-bottom: 30px;
   margin-right: 30px;
 }
 
-.benefits-title {
+.section-box > .section-item {
+  flex: 1 1 33%;
+}
+
+.section-box > .section-item:last-child {
+  margin-right: 0px;
+}
+
+.portfolio-cards .portfolio-item:not(:nth-child(3n + 3)) {
+  margin-right: 29px;
+}
+
+.portfolio-box.section-item: .benefits-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -279,6 +299,12 @@ p {
 }
 /* Стили для портфолио */
 
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
 .filter-button {
   font-family: inherit;
   color: var(--title-text-color);
@@ -287,6 +313,10 @@ p {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-left: 8px;
 }
 
 .filter-button.active {
@@ -300,6 +330,19 @@ p {
   background-color: var(--accent-color);
 }
 
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  border: 1px solid var(--portfolio-cards-border);
+}
+
+.item {
+  text-decoration: none;
+}
+
 .portfolio-cards .card-title {
   font-size: 18px;
   line-height: 2;
@@ -310,4 +353,5 @@ p {
 .description {
   font-size: 16px;
   line-height: 1.88;
+  color: var(--primary-text-color);
 }
