@@ -125,8 +125,8 @@ img {
   line-height: 1.19;
   text-decoration: none;
   margin-right: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-blue,
@@ -141,6 +141,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-link:hover:hover,
@@ -154,8 +156,6 @@ img {
 
 .list-item {
   display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .list-item:not(:last-child) {
@@ -237,7 +237,6 @@ img {
 .portfolio-item {
   display: block;
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .portfolio-cards .portfolio-item:nth-child(3n + 3) {
@@ -246,7 +245,6 @@ img {
 
 .portfolio-item .border-box {
   padding: 20px 24px;
-  /* margin-bottom: 30px; */
 }
 
 .benefits-title {
@@ -382,7 +380,6 @@ img {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
