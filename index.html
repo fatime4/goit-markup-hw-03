@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="nav-container">
       <!--Навігація-->
-      <div class="container nav-container">
-        <nav class="header-box">
+      <div class="container header-box">
+        <nav class="nav-box">
           <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
           <ul class="list nav-list">
             <li class="list-item">
@@ -37,33 +37,30 @@
               <a href="#" class="nav-link">Контакты</a>
             </li>
           </ul>
-
-          <!--Контакти-->
-          <ul class="list contact-list">
-            <li class="list-item">
-              <a href="mailto:info@devstudio.com" class="nav-link contact-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="list-item">
-              <a href="tel:+380961111111" class="nav-link contact-link">+38 096 111 11 11</a>
-            </li>
-          </ul>
         </nav>
+        <!--Контакти-->
+        <ul class="list contact-list">
+          <li class="list-item">
+            <a href="mailto:info@devstudio.com" class="nav-link contact-link">info@devstudio.com</a>
+          </li>
+          <li class="list-item">
+            <a href="tel:+380961111111" class="nav-link contact-link">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <!--Банер-->
       <section class="baner">
-        <div class="container baner-container">
+        <div class="container">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="baner-button">Заказать услугу</button>
         </div>
       </section>
       <!--Особливості-->
-      <section class="benefits">
-        <div class="container box">
-          <h2 class="section-title">Преимущества</h2>
+      <section class="container-box benefits">
+        <div class="container">
+          <h2 class="section-title visually-hidden">Преимущества</h2>
           <ul class="list section-box">
             <li class="section-item">
               <h3 class="benefits-title">Внимание к деталям</h3>
@@ -93,8 +90,8 @@
         </div>
       </section>
       <!--Чим ми займаємось-->
-      <section class="benefits">
-        <div class="container works-box">
+      <section class="container-box benefits">
+        <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list section-box">
             <li class="section-item">
@@ -110,36 +107,44 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section class="team">
-        <div class="container benefits-box">
+      <section class="container-box team">
+        <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="section-box list">
             <li class="section-item portfolio-item">
               <img src="./images/card-1.jpg" alt="Игорь Демьяненко" width="270" />
-              <h3 class="team-title">Игорь Демьяненко</h3>
-              <p class="team-text">Product Designer</p>
+              <div class="border-box">
+                <h3 class="team-title">Игорь Демьяненко</h3>
+                <p class="team-text">Product Designer</p>
+              </div>
             </li>
             <li class="section-item portfolio-item">
               <img src="./images/card-2.jpg" alt="Ольга Репина" width="270" />
-              <h3 class="team-title">Ольга Репина</h3>
-              <p class="team-text">Frontend Developer</p>
+              <div class="border-box">
+                <h3 class="team-title">Ольга Репина</h3>
+                <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="section-item portfolio-item">
               <img src="./images/card-3.jpg" alt="Николай Тарасов" width="270" />
-              <h3 class="team-title">Николай Тарасов</h3>
-              <p class="team-text">Marketing</p>
+              <div class="border-box">
+                <h3 class="team-title">Николай Тарасов</h3>
+                <p class="team-text">Marketing</p>
+              </div>
             </li>
             <li class="section-item portfolio-item">
               <img src="./images/card-4.jpg" alt="Михаил Ермаков" width="270" />
-              <h3 class="team-title">Михаил Ермаков</h3>
-              <p class="team-text">UI Designer</p>
+              <div class="border-box">
+                <h3 class="team-title">Михаил Ермаков</h3>
+                <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-box">
+      <div class="container">
         <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
         <address class="address">
           <ul class="list">
