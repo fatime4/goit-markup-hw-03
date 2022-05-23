@@ -214,6 +214,10 @@ img {
 
 /* Переваги */
 
+.works-box {
+  margin-bottom: 94px;
+}
+
 .benefits {
   background-color: #ffffff;
 }
@@ -233,6 +237,7 @@ img {
 .portfolio-item {
   display: block;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio-cards .portfolio-item:nth-child(3n + 3) {
